@@ -1,4 +1,3 @@
-AddHandler application/x-httpd-ea-php83 .php
 DirectoryIndex index.php
 
 <IfModule mod_rewrite.c>
@@ -6,12 +5,12 @@ DirectoryIndex index.php
 
     # Redirect to URL without front controller
     RewriteCond %{ENV:REDIRECT_STATUS} ^$
-    RewriteRule ^index\.php(/(.*)|$) %{CONTEXT_PREFIX}/$2 [R=301,L]
+    RewriteRule ^index\.php(/(.*)|$) /$2 [R=301,L]
 
     # Only rewrite requests that are not files or directories
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^ %{CONTEXT_PREFIX}/index.php [L]
+    RewriteRule ^ /index.php [L]
 </IfModule>
 
 <IfModule !mod_rewrite.c>
