@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.dartplesis.lv/sitemap.xml
+
+# Block admin area from indexing
+Disallow: /admin/

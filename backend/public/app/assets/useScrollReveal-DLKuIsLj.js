@@ -1,0 +1,1 @@
+import{D as e}from"./runtime-core.esm-bundler-BDLxck5O.js";function t(){e(()=>{let e=new IntersectionObserver(t=>{t.forEach(t=>{t.isIntersecting&&(t.target.classList.add(`visible`),e.unobserve(t.target))})},{threshold:.1});document.querySelectorAll(`.reveal`).forEach(t=>e.observe(t))})}export{t};

@@ -1,52 +1,72 @@
-# Cache and logs (Symfony2)
-/app/cache/*
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
+# ═══════════════════════════════════════════
+# OS & IDE
+# ═══════════════════════════════════════════
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
 
-# Email spool folder
-/app/spool/*
+# ═══════════════════════════════════════════
+# Claude Code session files
+# ═══════════════════════════════════════════
+.claude/
 
-# Cache, session files and logs (Symfony3)
-/var/cache/*
-/var/logs/*
-/var/sessions/*
-!var/cache/.gitkeep
-!var/logs/.gitkeep
-!var/sessions/.gitkeep
+# ═══════════════════════════════════════════
+# Misc files at repo root (originals / drafts)
+# ═══════════════════════════════════════════
+*.jpeg
+og-image.jpg
+logo.jpg
 
-# Logs (Symfony4)
-/var/log/*
-!var/log/.gitkeep
+# ═══════════════════════════════════════════
+# FRONTEND – Quasar / Node
+# ═══════════════════════════════════════════
+frontend/node_modules/
+frontend/.quasar/
+frontend/dist/
+# Local env overrides – the built SPA already has public keys baked in
+frontend/.env.local
+frontend/.env.*.local
 
-# Parameters
-/app/config/parameters.yml
-/app/config/parameters.ini
+# ═══════════════════════════════════════════
+# BACKEND – Symfony / PHP
+# ═══════════════════════════════════════════
 
-# Managed by Composer
-/app/bootstrap.php.cache
-/var/bootstrap.php.cache
-/bin/*
-!bin/console
-!bin/symfony_requirements
-/vendor/
+# Composer dependencies
+backend/vendor/
 
-# Assets and user uploads
-/web/bundles/
-/web/uploads/
+# Symfony generated files
+backend/var/
+
+# Built bundles
+backend/public/bundles/
+
+# Uploaded files / user content (regenerated at runtime)
+backend/public/uploads/
+
+# The built Quasar SPA is intentionally committed so the server
+# doesn't need Node.js.  Do NOT add backend/public/app/ here.
+
+# Environment overrides – NEVER commit secrets
+backend/.env.local
+backend/.env.local.php
+backend/.env.*.local
+backend/config/secrets/prod/prod.decrypt.private.php
 
 # PHPUnit
-/app/phpunit.xml
-/phpunit.xml
+backend/.phpunit.cache/
+backend/phpunit.xml
 
-# Build data
-/build/
+# Symfony asset-mapper compiled assets
+backend/public/assets/
+backend/assets/vendor/
 
-# Composer PHAR
-/composer.phar
-
-# Backup entities generated with doctrine:generate:entities command
-**/Entity/*~
-
-# Embedded web-server pid file
-/.web-server-pid
+# ═══════════════════════════════════════════
+# DOCKER
+# ═══════════════════════════════════════════
+docker-compose.override.yml
+.env.docker.local

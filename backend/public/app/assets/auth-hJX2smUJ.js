@@ -1,0 +1,1 @@
+import{t as e}from"./useAuth-Dan1oV-J.js";var t=async()=>{let{fetchMe:t}=e();await t()};export{t as default};
