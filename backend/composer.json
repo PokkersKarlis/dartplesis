@@ -7,8 +7,8 @@
         "php": ">=8.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "doctrine/doctrine-bundle": "^3.2.2",
-        "doctrine/doctrine-migrations-bundle": "^3.7",
+        "doctrine/doctrine-bundle": "^3.1",
+        "doctrine/doctrine-migrations-bundle": "^3.3",
         "doctrine/orm": "^3.6.3",
         "nelmio/cors-bundle": ">=2.6.1",
         "phpdocumentor/reflection-docblock": "^6.0.3",
@@ -52,7 +52,6 @@
             "symfony/flex": true,
             "symfony/runtime": true
         },
-        "bump-after-update": true,
         "sort-packages": true
     },
     "autoload": {
