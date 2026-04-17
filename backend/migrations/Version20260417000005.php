@@ -26,6 +26,7 @@ final class Version20260417000005 extends AbstractMigration
     public function up(Schema $schema): void
     {
         // ── club_request ──────────────────────────────────────────────────────
+        $this->addSql('ALTER TABLE club_request DROP INDEX IF EXISTS idx_creq_status_created, DROP INDEX IF EXISTS idx_creq_ip_created');
         $this->addSql('ALTER TABLE club_request ADD INDEX idx_creq_status_created (status, created_at), ADD INDEX idx_creq_ip_created (ip_address, created_at)');
     }
 
