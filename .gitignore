@@ -16,11 +16,7 @@ desktop.ini
 .claude/
 
 # ═══════════════════════════════════════════
-# Misc files at repo root (originals / drafts)
-# ═══════════════════════════════════════════
-*.jpeg
-og-image.jpg
-logo.jpg
+
 
 # ═══════════════════════════════════════════
 # FRONTEND – Quasar / Node
