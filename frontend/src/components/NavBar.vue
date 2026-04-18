@@ -3,7 +3,7 @@
     <q-toolbar class="dk-toolbar">
       <!-- Logo -->
       <router-link to="/" class="nav-logo">
-        <img src="/logo.jpg" alt="DK Dārtplēsis logo" class="nav-logo__img" />
+        <img src="/dartplesis_logo.svg" alt="DK Dārtplēsis logo" class="nav-logo__img" />
         <span class="nav-logo__text">DK <span class="nav-logo__accent">Dārtplēsis</span></span>
       </router-link>
 

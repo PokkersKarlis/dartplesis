@@ -25,7 +25,7 @@
           <span class="corner corner--tr" aria-hidden="true" />
           <span class="corner corner--bl" aria-hidden="true" />
           <span class="corner corner--br" aria-hidden="true" />
-          <img src="/logo.jpg" alt="DK Dārtplēsis" class="about-logo" />
+          <img src="/dartplesis_logo.svg" alt="DK Dārtplēsis" class="about-logo" />
         </q-card>
       </div>
     </div>
