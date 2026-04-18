@@ -6,7 +6,6 @@
         <img src="/dartplesis_logo.svg" alt="DK Dārtplēsis logo" class="nav-logo__img" />
         <span class="nav-logo__text">DK <span class="nav-logo__accent">Dārtplēsis</span></span>
       </router-link>
-
       <q-space />
 
       <!-- Desktop Nav Links -->
