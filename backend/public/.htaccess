@@ -3,9 +3,10 @@ DirectoryIndex index.php
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Serve SPA static files from /app/ when requested from root
-    RewriteRule ^assets/(.*)$ /app/assets/$1 [L]
-    RewriteRule ^(site\.webmanifest|favicon\..+|apple-touch-icon\.png|robots\.txt|sitemap\.xml|og-image\.jpg|logo\.jpg|map\.png|web-app-manifest-.+\.png|brand/.+)$ /app/$1 [L,QSA]
+    # Serve SPA static files from /app/ when the file doesn't exist at root
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{DOCUMENT_ROOT}/app%{REQUEST_URI} -f
+    RewriteRule ^(.+)$ /app/$1 [L,QSA]
 
     # Redirect to URL without front controller
     RewriteCond %{ENV:REDIRECT_STATUS} ^$
