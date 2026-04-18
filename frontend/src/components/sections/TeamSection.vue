@@ -664,7 +664,6 @@ onMounted(async () => {
   min-width: 0;
   padding: 1rem 1.25rem;
   border-right: 1px solid rgba(255,255,255,0.07);
-  white-space: nowrap;
 
   &:last-child { border-right: none; }
 }
@@ -675,6 +674,7 @@ onMounted(async () => {
   text-transform: uppercase;
   color: #555;
   margin-bottom: 3px;
+  white-space: nowrap;
 }
 
 .stat-val {
@@ -682,6 +682,7 @@ onMounted(async () => {
   font-size: 1rem;
   font-weight: 700;
   color: #e0e0e0;
+  word-break: break-word;
 
   &.teal { color: #4ecdc4; }
 }
