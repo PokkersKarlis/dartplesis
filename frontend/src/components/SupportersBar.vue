@@ -105,7 +105,7 @@ onMounted(async () => {
 .sup-logo {
   max-height: 100px;
   height: 100px;
-  max-width: auto;
+  max-width: 100%;
   object-fit: contain;
   display: block;
 }
@@ -136,7 +136,7 @@ onMounted(async () => {
 
   .sup-logo {
     max-height: 100px;
-    max-width: auto;
+    max-width: 100%;
   }
 
   .sup-item {
